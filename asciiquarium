@@ -203,7 +203,7 @@ sub add_castle {
 		shape		=> $castle_image,
 		color		=> $castle_mask,
 		position	=> [ $anim->width()-32, $anim->height()-13, $depth{'castle'} ],
-		default_color	=> 'BLACK',
+		default_color	=> 'RED',
 	);
 }
 
