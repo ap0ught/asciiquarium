@@ -1,0 +1,78 @@
+# Asciiquarium v1.1
+
+**Author:** Kirk Baucom (<kbaucom@schizoid.com>)
+**Website:** [robobunny.com/projects/asciiquarium](http://robobunny.com/projects/asciiquarium)
+
+## Overview
+
+Asciiquarium is a fun, animated aquarium rendered entirely in ASCII art for your terminal. Watch fish, sharks, whales, submarines, and more swim across your screen!
+
+## Features
+
+- Animated ASCII art aquarium in your terminal
+- Multiple fish species, sharks, whales, submarines, ships, ducks, dolphins, and more
+- Randomized marine life and events
+- Colorful display (if your terminal supports it)
+- Classic mode for original species only
+
+## Installation
+
+Asciiquarium is a single Perl script. To install:
+
+1. **Download the script:**
+   Place `asciiquarium` in a directory of your choice (e.g., `/usr/local/bin` or `/usr/local/games`).
+
+2. **Make it executable:**
+   ```sh
+   chmod +x asciiquarium
+   ```
+
+3. **Install dependencies:**
+   - **Term::Animation** (requires **Curses**)
+   - On Ubuntu/Debian:
+     ```sh
+     sudo apt-get install libcurses-perl
+     sudo cpan Term::Animation
+     ```
+   - On other systems, use CPAN or your package manager to install `Curses` and `Term::Animation`.
+
+## Usage
+
+Run the program in your terminal:
+
+```sh
+./asciiquarium
+```
+
+### Command Line Options
+
+- `-c` : Classic mode (only original species from Asciiquarium 1.0)
+
+### Controls (while running)
+
+- `q` : Quit
+- `r` : Redraw (recreates all entities)
+- `p` : Pause/unpause animation
+
+## Troubleshooting
+
+- **Windows is not supported** (unless using Cygwin with curses).
+- If you see errors about missing modules, install them via CPAN:
+  ```sh
+  cpan Curses
+  cpan Term::Animation
+  ```
+- Make sure your terminal supports colors for best experience.
+
+## Contributors
+
+- **Joan Stark**: Most ASCII art ([link](http://www.geocities.com/SoHo/7373/))
+- **Claudio Matsuoka**: New fish species and improvements (backported from Android live wallpaper)
+
+## License
+
+Asciiquarium is licensed under the GNU General Public License v2 or later. See `gpl.txt` for details.
+
+---
+
+Enjoy your ASCII aquarium!
